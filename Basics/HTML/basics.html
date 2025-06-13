@@ -1,0 +1,200 @@
+<!DOCTYPE html> <!-- This is the basic declaration for HTML code-->
+
+<html lang="en"> <!-- This tag is the root element for the HTML document-->
+<!-- The "lang" attribute specify the language of the web page -->
+    <head>
+        <!-- Everything inside this tag won't be shown in the page visually so it's useful to link stylesheets or metadata -->
+
+        <meta charset="UTF-8"/> 
+        <!-- This tag specifies the character encoding for the HTML document -->
+
+        <title> Tutorial page </title>
+        <!-- This tag specifies the title of the HTML document, which is shown in the browser tab -->
+        
+        <meta name="viewport" content="width=device-width"/>
+        <!-- This tag makes the page adaptable to different screen sizes -->
+
+        <meta name="description" content="Using this page as a learning one"/>
+        <!-- This tag provides a brief description of the page, useful for search engines and social media -->
+
+    </head>
+
+    <body>
+        <!-- Everything inside this tag will be shown in the page visually so it's useful to put text, images, links, etc. -->
+        <header>
+            <h1> Tutorial page </h1>
+            <h2> Table of contents: </h2>
+            <nav>
+                <a href="#introduction">Introduction</a><br> <!-- Using this type of link (# + name) links to the section with that id value, so it's an inpage link. -->
+                <a href="#important-citations">Important-citations</a><br>
+                <a href="#useful-links"> Useful links</a><br>
+                <a href="#lists">Some lists here!</a><br>
+                <a href="#tables"> Tables </a><br>
+                <a href="#">Go back</a> <!-- Doing so you get a link to come back to the top of the page -->
+            </nav>
+        </header>
+        <!-- This header is semantically the header area of the page -->
+        <!-- The <nav> element is the main navigation space for the page because it's in the <header> -->
+        
+        <main> <!-- The <main> element defines the main area of the page -->
+            <section id="introduction"> <!-- Here we have a section with an id -->
+            <!-- A section is semantically a zone that groups several subtopics of a big topic-->
+                <h2>Introduction</h2>
+                <p>This is the introduction to the tutorial.</p>
+
+                <article>
+                    <h1>How to plant a plant</h1>
+                    <p> This is a specific article on how to plant a plant </p>
+                </article>
+
+                <article>
+                    <h1>How to water a plant coorectly</h1>
+                    <p> This is a specific article on how to water a plant </p>
+                </article>
+                <!--Here we have 2 articles, that are 2 subtopics grouped in a big topic defined by the <section> -->
+            </section>
+
+            <section id="important-citations">
+                <h1>Important citations</h1>
+                <p>Here we will see some citations:</p>
+                
+                <blockquote cite="John Lenon"> <!--This element is used to create a block with a quote in it.-->
+                    <!--The cite attribute is used for links most of the times, and it will not display.-->
+                    Life is what happens to you while you're busy making other plans.
+                </blockquote>
+                <p>Credits: <cite> John Lenon</cite></p> <!--The cite element is used to cite the source of the quote.
+                It is displayed.-->
+            </section>
+
+            <section id="lists">
+                <h1>There are some lists</h1>
+
+                <article id="unordered-lists">
+                    <h1>Unordered lists</h1>
+
+                    <ul>                     <!--This is the tag to create an unordered list-->
+                        <li>Eggs</li>        <!--In any type of list the objects are sourrounded by the <li> tag-->
+                        <li>Tomatoes</li>
+                        <li>Cannon</li>
+                    </ul>
+                </article>
+
+                <article id="ordered-lists">
+                    <h1> Ordered lists </h1>
+
+                    <ol>                      <!--This is the tag to create an ordered list-->
+                        <li>Banana</li>
+                        <li>Chicken</li>
+                        <li>China</li>
+                    </ol>
+
+                    <h1> Ordered lists with letters</h1>
+
+                    <ol type="A">         <!--With this attribute you can change from numbers (default) to other things-->
+                        <li>Computer</li>
+                        <li>GPU</li>
+                        <li>CPU</li>
+                    </ol>
+
+                    <h1> Ordered list reversed </h1>
+
+                    <ol reversed start="3">   <!--The reversed attribute revert the order of the enumeration and start define the starting point-->
+                        <li>Flora</li>
+                        <li>Carlo</li>
+                        <li>Martina</li>
+                    </ol>
+
+                    <h1>Ordered list with a selected value</h1>
+                    <ol>
+                        <li value="10">Freezer</li>     <!--Using the value attribute to set up the enumeration you want-->
+                        <li value="99">Cold</li>
+                        <li value="87">Summer!</li>
+                    </ol>
+                </article>
+
+                <article id="description-lists">
+                    <h1>Description lists here!</h1>
+
+                    <dl>                  <!--Description list tag-->
+                        <dt>McLaren</dt>      <!--The description term is the object of the list-->
+                        <dd>One of the most expansive and fast cars in the market nowdays.</dd> <!--The description details is just a description of the object-->
+
+                        <dt>Lamborghini</dt>
+                        <dd>Cheaper than the McLaren but still fas</dd>
+                    </dl>
+                </article>
+            </section>
+
+            <section id="tables">
+                <h1> Here are some tables:</h1>
+
+                <table>     <!--This is the tag to semantically say: That's a tab!-->
+                    <caption>
+                        <h1>Food table</h1>     <!--The <caption> is used to title up the table-->
+                    </caption>
+
+                    <thead>       <!--This defines the head of the table-->
+                        <tr>       <!--define a table row-->
+                            <th> Food name </th>    <!--Define a table heading-->
+                            <th> Taste </th>
+                            <th> To buy? </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>     <!--Defines the body of the table-->
+                        <tr>
+                            <td> Banana </td>   <!--Defines a table data, so elements in the table-->
+                            <td> Good </td>
+                            <td> Yes </td>
+                        </tr>
+
+                        <tr>
+                            <td> Strawbarry </td>
+                            <td> Not really </td>
+                            <td> No </td>
+                        </tr>
+
+                        <tr>
+                            <td> Orange </td>
+                            <td> Disgusting </td>
+                            <td> No </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+        
+        <aside id="useful-links"> <!-- This defines a side area to the page-->
+            <h1> Useful links: </h1>
+            <nav>
+                <a href="https://open.spotify.com" target="_self">Spotify</a><br>
+                <!--Here we have a link with 2 attributes:
+                    href specify the URL
+                    Target specify where to open the window-->
+                <!--In this case the _self opens the window in the current one-->
+
+                <a href="https://claude.ai" target="_blank">Claude AI</a><br>
+                <!-- This link opens claude ai website in another window (because target="_blank") -->
+
+                <a href="HTML/basic-code.html">Blank page</a><br>
+                <!--This opens a relative URL so an internal page. -->
+
+                <a href="" download="Basic-layout.png">Download a file</a><br>
+                <!--This is how you can make a download link-->
+                <!--You can also add href but even if you dont want do not omit it.-->
+            </nav>
+        </aside>
+        <!-- The <aside> is semantically some complementary informations about the page -->
+
+        <footer>
+            <h1> This is the footer </h1>
+            <adress>
+                <p> Here put contact info </p> <!-- Use <adress> to wrap contact informations -->
+            </adress>
+        </footer>
+        <!-- This footer is semantically the footer area of the page -->
+        <!-- In the footer you have to put like informations about you-->
+
+    </body>
+</html>

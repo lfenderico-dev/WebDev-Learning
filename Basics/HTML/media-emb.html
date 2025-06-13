@@ -1,0 +1,69 @@
+<!DOCTYPE html> <!-- This is the basic declaration for HTML code-->
+
+<html lang="en"> <!-- This tag is the root element for the HTML document-->
+<!-- The "lang" attribute specify the language of the web page -->
+    <head>
+        <!-- Everything inside this tag won't be shown in the page visually so it's useful to link stylesheets or metadata -->
+
+        <meta charset="UTF-8"/> 
+        <!-- This tag specifies the character encoding for the HTML document -->
+
+        <title> Media </title>
+        <!-- This tag specifies the title of the HTML document, which is shown in the browser tab -->
+        
+        <meta name="viewport" content="width=device-width"/>
+        <!-- This tag makes the page adaptable to different screen sizes -->
+
+    </head>
+
+    <body>
+        <!-- Everything inside this tag will be shown in the page visually so it's useful to put text, images, links, etc. -->
+
+        <header>
+            <h1>Some images</h1>
+        </header>
+
+        <main>
+            <section id="cats-images">
+                <h1>Some cats</h1>
+
+                <img src="https://www.alleycat.org/wp-content/uploads/2019/03/FELV-cat.jpg" alt="A cat" width="600" height="400" loading="lazy"/>
+                <!--To set up an imge use the <img> tag-->
+                <!--The src attribute is used to define the URL/local path of the image-->
+                <!--The alt attribute is what is going to be displayed if the image is unavable or what is read when the page is read by voice assistants-->
+                <!--It's good practice to setup the size to avoid some problems even thought you are going to modify it with CSS.-->
+                <!--loading="lazy" sets up this mode that renders the image when you get closer and not at the start of the page.
+                This enhances performance.-->
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAn0wn7vq08D_bE0yf9dQ32na4p6auqDXJzA&s" alt="Another cat" width="1920" height="1080" loading="lazy">
+            </section>
+
+            <section id="pizza-images">
+                <h1>Some pizzas</h1>
+
+                <img src="https://safrescobaldistatic.blob.core.windows.net/media/2022/11/PIZZA-MARGHERITA.jpg" alt="Pizzaaa" width="800" height="400" loading="lazy">
+
+                <img src="https://www.gozney.com/cdn/shop/articles/Mike_s_Sicilian_Pizza_-_Large1.jpg?v=1661435901&width=1500" alt="Another pizzaaaa" width="1200" height="800" loading="lazy">
+            </section>
+
+            <section id="video">
+                <h1>A video:</h1>
+
+                <video src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" poster="https://www.ameliadambrosio.it/images/coniglio_big_img2_hp.jpg" controls>
+                    <p>There is a video on how to do the recipe:</p>
+                </video>
+
+                <!--The tag to define a video is <video>-->
+                <!--The poster attribute specify the tumbnail and controls adds the basic video controls-->
+            </section>
+
+            <section id="audio">
+                <h1>An audio</h1>
+
+                <audio src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" controls>
+                    <p>Here is an audio!</p>
+                </audio>
+            </section>
+        </main>
+    </body>
+</html>

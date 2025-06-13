@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- This is the basic declaration for HTML code-->
+
+<html lang="en"> <!-- This tag is the root element for the HTML document-->
+<!-- The "lang" attribute specify the language of the web page -->
+    <head>
+        <!-- Everything inside this tag won't be shown in the page visually so it's useful to link stylesheets or metadata -->
+
+        <meta charset="UTF-8"/> 
+        <!-- This tag specifies the character encoding for the HTML document -->
+
+        <title> Forms tutorial </title>
+        <!-- This tag specifies the title of the HTML document, which is shown in the browser tab -->
+        
+        <meta name="viewport" content="width=device-width"/>
+        <!-- This tag makes the page adaptable to different screen sizes -->
+        
+        <meta name="description" content="Notes and tutorial for forms in HTML"/>
+        <!-- This tag provides a brief description of the page, useful for search engines and social media -->
+
+    </head>
+
+    <body>
+        <header>
+            <h1>Forms notes</h1>
+
+            <fieldset id="registration"> <!--Fieldsets are grouping of forms-->
+                <legend><h2>Registration:</h2></legend>
+
+                <form action="/register" method="POST">   <!--Tag to semantically say: that is a form!-->
+                    <!--The action attribute specify where to send the data-->
+                    <!--Method specify how to send the data-->
+                        <!--POST data is appended to the body of the HTTP request, is more secure so use it when it comes to passwords etc...-->
+                    
+
+                    <fieldset id="username">
+                        <!--Username form-->    
+                        <label for="username">Username:</label> <!--Create a label for username-->
+                        <input type="text" id="username" name="username" placeholder="Insert your username" required><br><br> <!--Required sets the input mandatory and the placeholder sets up the written part displayed.-->
+                        <!--Here we:
+                        Define the input type.
+                        Assign an id that must be equal to the form.
+                        Assign a name.-->
+                    </fieldset>
+
+                    <fieldset id="email">
+                        <!--Email form-->
+                        <label for="email">Email:</label> <!--Create a label for email-->
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+                    </fieldset>
+
+                    <fieldset id="password"> <!--Password fieldset-->
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+                    </fieldset>
+                    
+                    <fieldset id="gender"> <!--Gender fieldset-->
+                        <legend>Select your gender</legend><br> <!--Create a legend to explain what they re going to be asked-->
+
+                        <input type="radio" id="male" name="gender" value="male"> <!--Create a radio type for the first option (male)-->
+                        <label for="male">Male</label><br> <!--Create the label for the first option-->
+            
+                        <input type="radio" id="female" name="gender" value="female"> <!--Create a radio type for the second option (female)-->
+                        <label for="female">Female</label><br> <!--Create the label for the second option-->
+                    </fieldset>
+                    
+                    <fieldset id="newsletter"> <!--Newsletter fieldset-->
+                        <label for="newsletter">Do you want to subscribe to the newsletter?</label><br>
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    </fieldset>
+
+                    <fieldset id="submit-button">
+                        <input type="submit" value="Register"> <!--Create a submit button-->
+                    </fieldset>
+                </form>
+            </fieldset>
+        </header>
+    </body>
+</html>
