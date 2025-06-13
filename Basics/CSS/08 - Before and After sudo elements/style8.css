@@ -1,0 +1,14 @@
+p::after {
+    content: "this is after";
+    color: rgb(39, 8, 143);
+    margin: 5px;
+}
+
+p::before {
+    content: "this is before";
+    color: rgb(42, 165, 95);
+    margin: 5px;
+}
+
+/* You can use those sudo elements to put a content after or before an element */
+/* You can also set up any property you want to them */

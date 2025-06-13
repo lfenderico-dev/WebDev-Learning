@@ -1,0 +1,22 @@
+h1 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 25px;
+}
+
+/* Media queries allow us to make the site look good even on other screen sizes */
+/* With them we can change the properties based on the screen width */
+
+@media (max-width:480px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
+/* Doing so when the screen width is below the deadline the new properties are applied */
+

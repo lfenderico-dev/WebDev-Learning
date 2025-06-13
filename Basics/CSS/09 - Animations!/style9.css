@@ -1,0 +1,16 @@
+/* Let's define the animation using @keyframes */
+@keyframes slide-down {
+    0% {  /*Meaning at the start of the animation */
+        transform: translateY(0); 
+    }
+
+    100% {  /*Meaning at the end of the animation */
+        transform: translateY(20px);
+    }
+}
+/* We have created the animation with the name "slide-down */
+
+/* Let's apply it to the element */
+p {
+    animation: slide-down 2s infinite alternate-reverse;
+}

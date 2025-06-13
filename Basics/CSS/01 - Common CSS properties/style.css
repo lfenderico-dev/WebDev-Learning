@@ -1,0 +1,49 @@
+/* Colors */
+div {
+    background-color: lightblue; 
+    /*This property is used to set up the background color of an element*/
+    color: black;
+    /* This property is used to set up the color of an element, in this case the color of the paragraph inside the div */
+}
+
+
+/* Element sizing */
+div {
+    width: 100%;
+    /* This sets up the width of the element to the maximum of the page, so it is responsive if the screen witdth changes it changes too. */
+
+    max-width: 75vw;
+    /* This property sets up the max-width */
+    /* Using the vw is good practice because it refers to the width of the viewport */
+
+    height: 50vh;
+    /* This sets up the height */
+    /* When possible don't add this. */
+}
+
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* This is used to import a font */
+/* When you need fonts look up google fonts! */
+
+div {
+    font-size: 15px;
+    /* This property sets up the font size of the written part of an element. */
+
+    font-weight: 600;
+    /* This property specify if the text is bold, normal... */
+
+    font-family: Inter, sans-serif;
+    /* This property specify the font that will be used */
+    /* If the first one is not available the second one would be applied */
+    /* The reason why there is "sans-serif" is because it is safe, every browser will accept it. */
+}
+
+
+/* Borders */
+div {
+    border: 4px solid blue; /* Used to set up the border */
+    /* This property is:
+    border-width + border-style + border-color. */
+}

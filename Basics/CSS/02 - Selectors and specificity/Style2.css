@@ -1,0 +1,36 @@
+/* General selector */
+* {
+  border: 1px solid black; /* Applies to all elements */
+}
+
+/* Id selector */
+#first-paragraph {
+  color: blue; /* Uses the id as reference to the element */
+}
+/* The Id is the most specific because it is unique */
+
+
+/* Class selector */
+.good-paragraph {
+  color: green; /* Uses the class as reference to the element */
+}
+/* It is less specific then the ID and can be used by 1 or plus element at time */
+
+
+/* Element selector */
+p {
+  color: red; /* Uses the element as reference to the element */
+}
+/* It is the less specific and applies to all the elements */
+
+p {
+    color: yellow;
+}
+/* This will overwrite the previous because element selectors have the same specificity so the last one in the code will be selected */
+
+
+
+/* As you can see there is a priority scale. (CSS Specificity)
+First the most specific and then the less specific.
+
+Even though the paragraph with id="first-paragraph" is a paragraph the property selected when called with its ID would be applied so the one called with the element selector would be overrided */

@@ -1,0 +1,23 @@
+/* Just styling the button */
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    margin: 4px 2px;
+    }
+
+/* Important thing for button */
+button {
+    transition: 500ms;
+    /* This will make the button change properties smoothly when hovered */
+}
+/* Don't make the mistake to add the transition property in the button:hover because it will work only when you go on the button and not when you leave the cursor from there */
+
+
+/* Hover properties */
+button:hover {
+    opacity: 35%
+    /* This will make the button more transparent when hovered */
+}

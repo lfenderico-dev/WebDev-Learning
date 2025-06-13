@@ -1,0 +1,13 @@
+h1 {
+    display: block;
+}
+/* Headings are block element in default */
+/* A block element takes all the width possible and always starts in a new line */
+
+span {
+    display: inline;
+}
+/* An inline element only takes the width of its content and does not start in a new line */
+/* A span is an inline element in default */
+
+/* You can see this using developer tools in the page index4.html */

@@ -1,0 +1,48 @@
+/* Let's set the body height so we can scroll down */
+body {
+    height: 2000px;
+}
+
+
+div {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+/* The default position value is static that is the normal behaviour of elements */
+
+/* Using position:absolute; allow you to use top/left/right/bottom to control the position of the element */
+
+/* Using this the element would take only the necessary width unless you specify it. */
+
+.parent {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+}
+.child {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+}
+/* The child element is positioned relative to the parent element because the parent has position:relative; */
+/* If the parent element had position:static; the child would be positioned relative to the document body */
+
+/* In fact the element with position absolute is going to be based on the nearest position:relative parent element */
+
+
+.fixed {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: blue;
+}
+/* Fixed elements are going to be based on the viewport */
+/* They are going to stick on the page when we scroll down so they're useful to build like bar menu... */

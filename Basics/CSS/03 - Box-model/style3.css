@@ -1,0 +1,26 @@
+/* Every object is a box */
+/* Here is how you can change the size of this box */
+
+div {
+    /* With this we sized the content */
+    width: 100%;
+    max-width: 40vw;
+    height: 20vh;
+
+    /* To size the border */
+    border: 4px solid;
+
+    /* To size the padding */
+    padding: 10px; /* This applies to all sides */
+    /* You can also use double value to specify top/bottom and left/right or use like padding-left as a specific one */
+    /* Padding is the space between content and border */
+
+    /* To size the margin */
+    margin: 20px; /* This applies to all sides */
+    /* This works the same as padding */
+    /* Margin is the space between the border of an element with another */
+
+    /* Set up the box-sizing */
+    box-sizing: border-box;
+    /* This specify that in the calculation of width, box and padding are going to be count. */
+}
