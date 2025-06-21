@@ -3,19 +3,19 @@
 ## A complete repository about basics of front-end development technologies.
 
 What topics you will find in this repository:
-- HTML;
-- CSS;
-- Javascript;
-- Typescript;
-- TailwindCSS;
-- Vue.js;
+- HTML
+- CSS
+- Javascript
+- Typescript
+- TailwindCSS (learned doing side-projects with Vue)
+- Vue.js
 
 Here you can also find:
-- My personal roadmaps;
-- Some little projects that I did to learn things;
-- Some exercises with solutions in some topics I studied;
+- My personal roadmaps
+- Some little projects that I did to learn things
+- Some exercises with solutions in some topics I studied
 
-## Here you can find the roadmaps for every technology:
+## Here you can find roadmaps and resources:
 
 ### General:
 ![GeneralRoadmap](/Media/Readme-Media/General.png)
@@ -30,10 +30,10 @@ Here you can also find:
 ![JavascriptRoadmap](/Media/Readme-Media/JavascriptRoadmap.png)
 
 ### Typescript:
-![TypescriptRoadmap](/Media/Readme-Media/TypeScriptRoadmap.png)
+[Official documentation](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
 
 ### TailwindCSS:
-![TailwindCSSRoadmap](/Media/Readme-Media/TailwindCSSRoadmap.png)
+[Official documentation](https://tailwindcss.com/)
 
 ### Vue.js:
-![VueJSRoadmap](/Media/Readme-Media/VueJSRoadmap.png)
+[Official documentation](https://vuejs.org/)
