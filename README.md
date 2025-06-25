@@ -12,7 +12,7 @@ What topics you will find in this repository:
 
 Here you can also find:
 - My personal roadmaps
-- Some little projects that I did to learn things
+- Many examples
 - Some exercises with solutions in some topics I studied
 
 ## Here you can find roadmaps and resources:
