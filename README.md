@@ -2,7 +2,7 @@
 
 ## A complete repository about basics of front-end development technologies.
 
-What topics you will find in this repository:
+**What topics you will find in this repository:**
 - HTML
 - CSS
 - Javascript
@@ -10,10 +10,16 @@ What topics you will find in this repository:
 - TailwindCSS (learned doing side-projects with Vue)
 - Vue.js
 
-Here you can also find:
+**Here you can also find:**
 - My personal roadmaps
 - Many examples
 - Some exercises with solutions in some topics I studied
+
+**Folder structure:**
+- This repository is organized by technologies, each for topics.
+- The notes about vue are into the `src` folder.
+    - It's a messy website that I did to make examples.
+    - Each topic is a component of that website!!
 
 ## Here you can find roadmaps and resources:
 
